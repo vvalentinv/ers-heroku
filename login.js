@@ -2,7 +2,7 @@ let usernameInput = document.getElementById('username');
 let passwordInput = document.getElementById('password');
 let loginSubmitButton = document.getElementById('login-submit-btn');
 let loginErrorMessageDiv = document.getElementById('login-error-message')
-let url = "http://172.16.19.218:41626"
+let url = "https://172.16.19.218:41626"
 
 loginSubmitButton.addEventListener('click', async (e) => {
   e.preventDefault();
