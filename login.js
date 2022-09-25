@@ -2,12 +2,13 @@ let usernameInput = document.getElementById('username');
 let passwordInput = document.getElementById('password');
 let loginSubmitButton = document.getElementById('login-submit-btn');
 let loginErrorMessageDiv = document.getElementById('login-error-message')
-let url = "https://ers-backend.herokuapp.com"
+let url_heroku = "https://ers-backend.herokuapp.com";
+let url_dev = "http://127.0.0.1:8080";
 
 loginSubmitButton.addEventListener('click', async (e) => {
   e.preventDefault();
   try {
-    let res = await fetch(`${url}/login`, {
+    let res = await fetch(`${url_heroku}/login`, {
       'credentials': 'include',
       'method': 'POST',
       'headers': {
